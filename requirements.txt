@@ -1,0 +1,14 @@
+numpy
+# The notebook needs pandas 2.x: pandas 3 rejects two patterns it uses
+# (assigning text into a float table, and drop() with both axis and columns).
+pandas>=2.3,<3
+scipy
+scikit-learn
+imbalanced-learn
+category_encoders
+yellowbrick
+# Yellowbrick imports distutils, which Python 3.12 removed; setuptools restores it.
+setuptools
+matplotlib
+seaborn
+jupyterlab
